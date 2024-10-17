@@ -1,6 +1,6 @@
 <?php
 
-function resolveOperacaoMatematica(int $num1, int $num2, string $operacao): int
+function resolveOperacaoMatematica(int $num1, int $num2, string $operacao): float
 {
     switch ($operacao) {
         case "soma":
