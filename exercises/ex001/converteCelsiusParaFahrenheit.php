@@ -1,6 +1,6 @@
 <?php
 
-function converteCelsiusParaFahrenheit(float $celsius): float
+function converteCelsiusParaFahrenheit(int $celsius): float
 {
     return (($celsius * 9/5) + 32);
 }
