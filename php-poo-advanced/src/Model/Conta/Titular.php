@@ -1,14 +1,17 @@
 <?php
 
+namespace Alura\Banco\Model\Conta;
+use Alura\Banco\Model\Pessoa;
+use Alura\Banco\Model\CPF;
+use Alura\Banco\Model\Endereco;
+
 class Titular extends Pessoa
 {
     private $endereco;
 
     public function __construct(CPF $cpf, string $nome, Endereco $endereco)
     {
-        $this->cpf = $cpf;
-        $this->validaNomeTitular($nome);
-        $this->nome = $nome;
+        parent::__construct($nome, $cpf);
         $this->endereco = $endereco;
     }
 
