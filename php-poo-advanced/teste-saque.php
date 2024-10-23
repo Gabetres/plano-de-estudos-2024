@@ -3,13 +3,14 @@
 require_once 'autoload.php';
 
 use Alura\Banco\Model\Conta\Conta;
+use Alura\Banco\Model\Conta\ContaPoupanca;
 use Alura\Banco\Model\Conta\Titular;
 use Alura\Banco\Model\Endereco;
 use Alura\Banco\Model\CPF;
 
 
 
-$conta = new Conta(
+$conta = new ContaPoupanca(
     new Titular(
         new CPF('123.456.789-10'),
         'Vinicius Dias',

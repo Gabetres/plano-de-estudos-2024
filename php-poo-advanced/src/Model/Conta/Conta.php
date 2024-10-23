@@ -5,7 +5,7 @@ namespace Alura\Banco\Model\Conta;
 class Conta
 {
     private $titular;
-    private $saldo;
+    protected $saldo;
     private static $numeroDeContas = 0;
 
     public function __construct(Titular $titular)
