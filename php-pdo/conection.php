@@ -1,5 +1,6 @@
 <?php
 
-$pdo = new PDO('sqlite:db.sqlite');
+$dbPath = __DIR__ . '/db.sqlite';
+$pdo = new PDO('sqlite:' . $dbPath);
 
 echo 'connected';
