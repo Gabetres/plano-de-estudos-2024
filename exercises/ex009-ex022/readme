@@ -1,0 +1,27 @@
+1) Faça um algoritmo para ler um número inteiro e informar se este é maior que 10. 
+2) Faça um algoritmo para ler dois números inteiros e informar se estes números são iguais ou 
+diferentes. 
+3) Faça um algoritmo para ler um número inteiro e informar se o número é par ou ímpar. 
+4) Faça um algoritmo para ler dois números inteiros A e B e informar se A é divisível por B. 
+5) Faça um algoritmo para ler dois números inteiros e escrever o maior. 
+6) Faça um algoritmo para ler duas variáveis inteiras A e B e garantir que A e B fiquem em ordem 
+crescente, ou seja, a variável deverá armazenar o menor valor fornecido e a variável B o maior. 
+        7) Faça um algoritmo para ler os coeficiente de uma equação do segundo grau e calcular as suas 
+        raízes, na forma Ax² + Bx + C, levando em consideração a existência de raízes reais (∆ > 0, a 
+        equação possui duas raízes reais e distintas; ∆ = 0, a equação possui raízes reais iguais; ∆ < 0, a 
+        equação não possui raízes reais). 
+8) Elabore um algoritmo para testar se uma senha digita é igual a “batatafrita”. Se a senha estiver 
+correta escreva “Acesso permitido”, do contrário emita a mensagem “Você não tem acesso ao 
+sistema”. 
+9) Faça um algoritmo para ler três valores reais e informar se estes podem ou não formar os lados de 
+um triângulo e qual tipo de triângulo seria: equilátero, isósceles ou escaleno. 
+10) Faça um algoritmo para ler três números positivos e escrevê-los em ordem crescente. 
+11) Faça um algoritmo para ler o nome, as três notas e o número de faltas de um aluno e escrever qual 
+a sua situação final: Aprovado, Reprovado por Falta ou Reprovado por Média. A média para 
+aprovação é 7,0 e o limite de faltas é 25% do total de aulas. O número de aulas ministradas no 
+semestre foi de 80. A reprovação por falta sobrepõe a reprovação por Média. 
+12) Elabore um algoritmo que indique se um número digitado está compreendido entre 20 e 90, ou 
+não. 
+13) Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o valor da compra 
+for menor que R$ 20,00; caso contrário, o lucro será de 30%. Elabore um algoritmo que leia o 
+valor do produto e imprima o valor de venda para o produto.
