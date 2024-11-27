@@ -11,10 +11,17 @@ $pdo = new PDO('sqlite:' . $dbPath);
 
 $student = new Student(
     null,
-    'Gabriel',
-    new DateTime('2004-09-03')
+    readline("Insira seu nome:\n"),
+    new DateTime(readline("Insira sua data de nascimento:\n"))
 );
 
-$sqlInsert = "INSERT INTO students (name, birth_date) VALUES ('{$student->name()}', '{$student->birthDate()->format('Y-m-d')}')";
+$sqlInsert = "INSERT INTO students (name, birth_date) VALUES (?,?)";
+$statement = $pdo->prepare($sqlInsert);
+$statement->bindValue(1, $student->name());
+$statement->bindValue(2, $student->birthDate()->format('Y-m-d'));
+$statement->execute();
+// echo $sqlInsert; exit();
 
-var_dump($pdo->exec($sqlInsert));
+if ($statement->execute()) {
+    echo "Aluno incluido";
+}
