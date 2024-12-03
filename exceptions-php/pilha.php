@@ -9,18 +9,13 @@ function funcao1()
         echo $error->getMessage() . PHP_EOL;
         echo $error->getLine() . PHP_EOL;
         echo $error->getTraceAsString() . PHP_EOL;
-        throw new RuntimeException(
-            'Exceção foi tratada, mas, pega ai',
-            $error->getCode(),
-            $error
-        );
     }
     echo 'Saindo da função 1' . PHP_EOL;
 }
 
 function funcao2()
 {
-    echo 'Entrei na função 2' . PHP_EOL;
+    echo 'Entrei na função 2';
 
     $exception = new RuntimeException();
     throw $exception;
