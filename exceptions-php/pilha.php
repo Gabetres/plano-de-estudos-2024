@@ -9,21 +9,21 @@ function funcao1()
         echo $error->getMessage() . PHP_EOL;
         echo $error->getLine() . PHP_EOL;
         echo $error->getTraceAsString() . PHP_EOL;
+        throw new RuntimeException(
+            'Exceção foi tratada, mas, pega ai',
+            $error->getCode(),
+            $error
+        );
     }
     echo 'Saindo da função 1' . PHP_EOL;
 }
 
 function funcao2()
 {
-
-    $divisao = intdiv(5, 0);
-    $arrayFixo = new SplFixedArray(2);
-    $arrayFixo[3] = 'valor';
-
     echo 'Entrei na função 2' . PHP_EOL;
-    for ($i = 1; $i <= 5; $i++) {
-        echo $i . PHP_EOL;
-    }
+
+    $exception = new RuntimeException();
+    throw $exception;
 
     echo 'Saindo da função 2' . PHP_EOL;
 }
