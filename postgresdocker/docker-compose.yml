@@ -1,0 +1,18 @@
+services:
+  dcs-postgres:
+    image: postgres:17.2
+    container_name: dcs-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_DB: estudando_sql
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/estudando_sql:/var/lib/postgresql/data
+
+networks:
+  default:
+    name: local-network
+    external: true
